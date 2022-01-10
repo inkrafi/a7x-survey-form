@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A7X Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Avenged Sevenfold Survey Form</h1>
+    <p id="description">Please fill the form below, thank you.</p>
+
+
+    <!-- Survey Form -->
+    <form id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label">
+                Name
+                <input type="text" id="name" placeholder="Enter your name.." required>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="email" id="email-label">
+                Email
+                <input type="email" id="email" placeholder="Enter your email.." required>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="number" id="number-label">
+                Age (optional)
+                <input type="number" id="number" placeholder="How old are you?" min="13" max="60">
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="dropdown" id="dropdown-label">
+                How do you know Avenged Sevenfold?
+                <select id="dropdown" name="dropdown" required>
+                    <option disabled selected value>Select an option</option>
+                    <option>Radio</option>
+                    <option>Friends</option>
+                    <option>Internet</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="favorite">
+                Who is your favorite?
+            </label>
+            <input type="radio" name="favorite" value="johny-sins" checked>Johny Sins <br>
+            <input type="radio" name="favorite" value="zacky-vengeance">Zacky Vengeance <br>
+            <input type="radio" name="favorite" value="matt-shadow">Matt Shadow <br>
+            <input type="radio" name="favorite" value="synister-gates">Synister Gates <br>
+            <input type="radio" name="favorite" value="the-rev">Jimmy "The Rev" <br>
+        </div>
+
+        <br><br>
+
+        <div class="form-group">
+            <label for="albums">
+                Select your favorite albums of Avenged Sevenfold!
+            </label>
+            <input type="checkbox" value="album1">Sounding the Seventh Trumpet <br>
+            <input type="checkbox" value="album2">Waking the Fallen <br>
+            <input type="checkbox" value="album3">City of Evil <br>
+            <input type="checkbox" value="album4">Avenged Sevenfold <br>
+            <input type="checkbox" value="album5">Nightmare <br>
+        </div>
+
+        <br><br>
+
+        <div class="form-group">
+            <label for="comments">
+                Any comments or suggestions?
+            </label>
+            <textarea id="comments" name="comments" cols="40" rows="5" placeholder="Enter your comment here.."></textarea>
+        </div>
+
+        <button type="submit" id="submit">
+            Submit
+        </button>
+    </form>
+    <!-- Survey Form -->
+
+
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
